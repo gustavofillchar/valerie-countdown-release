@@ -60,7 +60,7 @@ const CountdownTimer = () => {
               {timeRemaining.days}
             </span>
             <span className="text-xs block">
-              {timeRemaining.days === 1 ? "Dia" : "Dias"}
+              {timeRemaining.days <= 1 ? "Dia" : "Dias"}
             </span>
           </div>
           <div className="text-3xl">
@@ -68,7 +68,7 @@ const CountdownTimer = () => {
               {timeRemaining.hours}
             </span>
             <span className="text-xs block">
-              {timeRemaining.hours === 1 ? "Hora" : "Horas"}
+              {timeRemaining.hours <= 1 ? "Hora" : "Horas"}
             </span>
           </div>
           <div className="text-3xl">
@@ -76,13 +76,13 @@ const CountdownTimer = () => {
               {timeRemaining.minutes}
             </span>
             <span className="text-xs block">
-              {timeRemaining.minutes === 1 ? "Minuto" : "Minutos"}
+              {timeRemaining.minutes <= 1 ? "Minuto" : "Minutos"}
             </span>
           </div>
           <div className="text-3xl">
             <span className="font-semibold">{timeRemaining.seconds}</span>
             <span className="text-xs block">
-              {timeRemaining.seconds === 1 ? "Segundo" : "Segundos"}
+              {timeRemaining.seconds <= 1 ? "Segundo" : "Segundos"}
             </span>
           </div>
         </div>
